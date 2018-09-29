@@ -12,7 +12,7 @@ import requests
 def circlecrawler():
   time.sleep(5)
   while 1==1:     
-      r = requests.get('http://localhost:'+str(sys.argv[-1]) +'/api/getclecrawler' )
+      r = requests.get('https://localhost:'+str(sys.argv[-1]) +'/api/getclecrawler' )
       print(r.text)
       time.sleep(60*5)
           
